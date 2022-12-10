@@ -23,6 +23,7 @@ def pixels_to_ansi(px1: np.array, px2: np.array) -> str:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("filename")
+    parser.add_argument("-o", "--output")
     args = parser.parse_args()
 
     image = Image.open(args.filename)
@@ -36,4 +37,8 @@ if __name__ == "__main__":
             final_res += pixels_to_ansi(array[i * 2][j], array[i * 2 + 1][j])
         final_res += "\033[0m\n"
 
-    print(final_res)
+    if args.output is not None:
+        with open(args.output, "w") as f:
+            f.write(final_res)
+    else:
+        print(final_res)
