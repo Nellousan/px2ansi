@@ -22,3 +22,5 @@ redirection operator or use:
 ```
 python px2ansi.py your_image.png -o your_file.txt
 ```
+
+More features to come.
