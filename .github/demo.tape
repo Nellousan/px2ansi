@@ -49,11 +49,11 @@ Output demo.gif
 Require python
 
 Set FontSize 26
-Set Width 1150
-Set Height 1250
+Set Width 775
+Set Height 490
 Set LoopOffset 50%
 
-Type "python px2ansi.py metagross.png" 
+Type "python px2ansi.py px2ansi.png" 
 
 Sleep 500ms  
 
