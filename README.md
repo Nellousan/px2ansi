@@ -38,7 +38,9 @@ redirection operator or use:
 ```
 python px2ansi.py your_image.png -o your_file.txt
 ```
-
+Once you saved the output to a file, no need to use Px2ANSI anymore, you can simply print the content of
+your file using `cat your_file.txt`, for example.\
+<br>
 More features to come.
 
 # Roadmap
