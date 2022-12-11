@@ -51,3 +51,8 @@ More features to come.
 # License
 
 Distributed under the GNU General Public License v3.0
+
+# Contact
+
+Twitter - [@Nellousan](https://twitter.com/Nellousan)\
+Email - nellousan@hotmail.fr
