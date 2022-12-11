@@ -8,7 +8,7 @@ Convert Pixel Art image to Text Art !
 For all your needs to print fancy pixel art to your terminal.
 
 <p align="center">
-![demo](.github/demo.gif | width=400)
+<img width="450" src=".github/demo.gif">
 </p>
 
 Compatible with any terminal supporting 24-bit ANSI Escape code.
