@@ -52,6 +52,9 @@ if __name__ == "__main__":
         for j in range(array.shape[1]):
             final_res += pixels_to_ansi(array[i * 2][j], array[i * 2 + 1][j])
         final_res += "\033[0m\n"
+    if int(array.shape[0]) % 2 != 0:
+        for j in range(array.shape[1]):
+            final_res += pixels_to_ansi(array[array.shape[0] - 1][j], np.zeros((4)))
 
     if args.output is not None:
         with open(args.output, "w") as f:
