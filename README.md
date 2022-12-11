@@ -1,8 +1,7 @@
-
+<br>
 <p align="center">
 <img width="360" height="144" src=".github/px2ansi.png">
 </p>
-<br>
 <h3 align="center">Convert Pixel Art image to Text Art !</h3>
 <p align="center"><i>
 For all your needs to print fancy pixel art to your terminal.
@@ -10,13 +9,11 @@ For all your needs to print fancy pixel art to your terminal.
 
 # About
 
-<p align="center">
 This tool convert pixel art image to text art using ANSI escape codes.
 Motivated by the discovery of [arttime](https://github.com/poetaman/arttime), and the desire to use
 my own custom pixel arts with it.
 I've searched for a good converter but didn't find what i was looking for so this was an opportunity
 to make my own.
-</p>
 
 <p align="center">
 <img width="650" src=".github/demo.gif">
