@@ -1,10 +1,12 @@
 
 <p align="center">
 <img width="360" height="144" src=".github/px2ansi.png">
+</p>
 <br>
 <h3 align="center">Convert Pixel Art image to Text Art !</h3>
+<p align="center"><i>
 For all your needs to print fancy pixel art to your terminal.
-</p>
+</i></p>
 
 # About
 
