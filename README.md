@@ -1,6 +1,12 @@
 # Pixel Art to ANSI Escape code converter
 
-<p align="center">Convert Pixel Art image to Text Art !</p>
+
+
+
+<p align="center">
+<img width="360" height="144" src=".github/px2ansi.png">
+Convert Pixel Art image to Text Art !
+</p>
 
 For all your needs to print fancy pixel art to your terminal.
 
@@ -26,3 +32,12 @@ python px2ansi.py your_image.png -o your_file.txt
 ```
 
 More features to come.
+
+# Roadmap
+
+[ ] Add a feature for default background color
+[ ] Add support for transparent pixel (between 0-255 alpha)
+
+# License
+
+Distributed under the GNU General Public License v3.0
