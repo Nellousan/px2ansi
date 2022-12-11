@@ -2,16 +2,24 @@
 <p align="center">
 <img width="360" height="144" src=".github/px2ansi.png">
 <br>
+<h3 align="center">Px2ANSI
 Convert Pixel Art image to Text Art !
 </p>
 
-For all your needs to print fancy pixel art to your terminal.
+# About
+
+For all your needs to print fancy pixel art to your terminal.\
+This tool convert pixel art image to text art using ANSI escape codes.\
+Motivated by the discovery of [arttime](https://github.com/poetaman/arttime), and the desire to use
+my own custom pixel arts with it.\
+I've searched for a good converter but didn't find what i was looking for so this was an opportunity
+to make my own.
 
 <p align="center">
-<img width="450" src=".github/demo.gif">
+<img width="650" src=".github/demo.gif">
 </p>
 
-Compatible with any terminal supporting 24-bit ANSI Escape code.
+Compatible with any terminal supporting 24-bit ANSI Escape code and unicode characters.
 
 # How to use
 
@@ -24,6 +32,7 @@ Basic usage:
 ```
 python px2ansi.py your_image.png
 ```
+
 This will print directly to the terminal, if you want to save it to a file you can use the `>`
 redirection operator or use:
 ```
