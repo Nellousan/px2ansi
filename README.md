@@ -28,7 +28,7 @@ Use below.
 
 Px2ANSI isn't distributed with package managers, but fortunately, it is still very easy to install:
 ```
-git clone git@github.com:Nellousan/px2ansi.git
+git clone https://github.com/Nellousan/px2ansi.git
 cd px2ansi
 pip3 install .
 ```
