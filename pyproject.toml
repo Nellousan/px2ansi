@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "px2ansi"
+version = "0.0.1"
+dependencies = [
+  "numpy>=1.20.0",
+  "pillow>=9.3.0",
+  "argparse>=1.4.0",
+]
+
+[project.scripts]
+pta = "px2ansi:entry_point"
