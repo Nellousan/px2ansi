@@ -23,7 +23,7 @@ Compatible with any terminal supporting 24-bit ANSI Escape code and unicode char
 
 # Installation
 
-Installation is not mandatory, if you want to use Px2ANSI without installion, see the Non-Install
+Installation is not mandatory, if you want to use Px2ANSI without installation, see the Non-Install
 Use below.
 
 Px2ANSI isn't distributed with package managers, but fortunately, it is still very easy to install:
@@ -39,14 +39,15 @@ This will install Px2ANSI to your pip install path under the name `pta`.
 
 Basic usage:
 ```
-python px2ansi.py your_image.png
+pta your_image.png
 ```
 
 This will print directly to the terminal, if you want to save it to a file you can use the `>`
 redirection operator or use:
 ```
-python px2ansi.py your_image.png -o your_file.txt
+pta your_image.png -o your_file.txt
 ```
+
 Once you saved the output to a file, no need to use Px2ANSI anymore, you can simply print the content 
 of your file using `cat your_file.txt`, for example.\
 <br>
@@ -60,9 +61,13 @@ First, be sure to have the dependencies installed:
 ```
 pip3 install -r requirements.txt
 ```
+
+Now, you can simply run `python3 px2ansi.py` just like yoo would do with `pta`. For example:
 ```
-python px2ansi.py your_image.png
+python3 px2ansi.py your_image.png
 ```
+
+You can also move `px2ansi.py` somewhere else on your machine since it is a standalone script.
 
 # Roadmap
 
