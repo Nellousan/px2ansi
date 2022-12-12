@@ -35,6 +35,11 @@ pip3 install .
 
 This will install Px2ANSI to your pip install path under the name `pta`.
 
+To uninstall Px2ANSI:
+```
+pip3 uninstall px2ansi
+```
+
 # How to use
 
 Basic usage:
