@@ -46,14 +46,14 @@
 
 Output demo.gif
 
-Require python
+Require pta
 
 Set FontSize 26
 Set Width 775
 Set Height 490
 Set LoopOffset 50%
 
-Type "python px2ansi.py px2ansi.png" 
+Type "pta px2ansi.png" 
 
 Sleep 500ms  
 

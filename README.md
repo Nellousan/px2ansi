@@ -21,12 +21,21 @@ to make my own.
 
 Compatible with any terminal supporting 24-bit ANSI Escape code and unicode characters.
 
-# How to use
+# Installation
 
-Be sure to have the dependencies installed:
+Installation is not mandatory, if you want to use Px2ANSI without installion, see the Non-Install
+Use below.
+
+Px2ANSI isn't distributed with package managers, but fortunately, it is still very easy to install:
 ```
-pip install -r requirements.txt
+git clone git@github.com:Nellousan/px2ansi.git
+cd px2ansi
+pip3 install .
 ```
+
+This will install Px2ANSI to your pip install path under the name `pta`.
+
+# How to use
 
 Basic usage:
 ```
@@ -43,11 +52,23 @@ of your file using `cat your_file.txt`, for example.\
 <br>
 More features to come.
 
+# Non-Install Use
+
+It is also possible to use Px2ANSI without installing it by running `px2ansi.py` like any other python
+script.
+First, be sure to have the dependencies installed:
+```
+pip3 install -r requirements.txt
+```
+```
+python px2ansi.py your_image.png
+```
+
 # Roadmap
 
 - [ ] Add a feature for default background color
 - [ ] Add support for transparent pixel (between 0-255 alpha)
-- [ ] Make a setup script for installation
+- [x] Make a setup script for installation
 - [ ] Make the first proper release
 
 # License
