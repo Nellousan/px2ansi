@@ -5,11 +5,11 @@
 #
 # Copyright 2022 Nell Fauveau
 #
-# This program is free software; you can redistribute it and/or
+# Px2ANSI is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # version 2 as published by the Free Software Foundation.
 #
-# This program is distributed in the hope that it will be useful,
+# Px2ANSI is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
@@ -36,16 +36,7 @@ def pixels_to_ansi(px1: np.array, px2: np.array) -> str:
     return res
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("filename")
-    parser.add_argument("-o", "--output")
-    args = parser.parse_args()
-
-    image = Image.open(args.filename)
-    image = image.convert("RGBA")
-    array = np.array(image)
-
+def image_to_ansi(array: np.ndarray) -> str:
     final_res = ""
 
     for i in range(int(array.shape[0] / 2)):
@@ -54,10 +45,42 @@ if __name__ == "__main__":
         final_res += "\033[0m\n"
     if int(array.shape[0]) % 2 != 0:
         for j in range(array.shape[1]):
-            final_res += pixels_to_ansi(array[array.shape[0] - 1][j], np.zeros((4)))
+            final_res += pixels_to_ansi(
+                array[array.shape[0] - 1][j],
+                np.zeros((4))
+            )
+
+    return final_res
+
+
+def load_image(args: argparse.Namespace) -> np.ndarray:
+    image = Image.open(args.filename)
+    image = image.convert("RGBA")
+    array = np.array(image)
+    return array
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("filename")
+    parser.add_argument("-o", "--output")
+    args = parser.parse_args()
+    return args
+
+
+def entry_point():
+    args = parse_args()
+
+    array = load_image(args)
+
+    final_res = image_to_ansi(array)
 
     if args.output is not None:
         with open(args.output, "w") as f:
             f.write(final_res)
     else:
         print(final_res)
+
+
+if __name__ == "__main__":
+    entry_point()
