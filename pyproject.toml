@@ -12,4 +12,4 @@ dependencies = [
 ]
 
 [project.scripts]
-pta = "px2ansi:entry_point"
+px2ansi = "px2ansi:entry_point"

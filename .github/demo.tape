@@ -46,14 +46,14 @@
 
 Output demo.gif
 
-Require pta
+Require px2ansi
 
 Set FontSize 26
 Set Width 775
 Set Height 490
 Set LoopOffset 50%
 
-Type "pta px2ansi.png" 
+Type "px2ansi px2ansi.png" 
 
 Sleep 500ms  
 

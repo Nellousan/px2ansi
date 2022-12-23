@@ -33,7 +33,7 @@ cd px2ansi
 pip3 install .
 ```
 
-This will install Px2ANSI to your pip install path under the name `pta`.
+This will install Px2ANSI to your pip install path under the name `px2ansi`.
 
 To uninstall Px2ANSI:
 ```
@@ -44,13 +44,13 @@ pip3 uninstall px2ansi
 
 Basic usage:
 ```
-pta your_image.png
+px2ansi your_image.png
 ```
 
 This will print directly to the terminal, if you want to save it to a file you can use the `>`
 redirection operator or use:
 ```
-pta your_image.png -o your_file.txt
+px2ansi your_image.png -o your_file.txt
 ```
 
 Once you saved the output to a file, no need to use Px2ANSI anymore, you can simply print the content 
@@ -67,7 +67,7 @@ First, be sure to have the dependencies installed:
 pip3 install -r requirements.txt
 ```
 
-Now, you can simply run `python3 px2ansi.py` just like yoo would do with `pta`. For example:
+Now, you can simply run `python3 px2ansi.py` just like yoo would do with `px2ansi`. For example:
 ```
 python3 px2ansi.py your_image.png
 ```
